@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vladimirpezzole/video-maker-lab-calixto/issues"
   },
-  "homepage": "https://github.com/vladimirpezzole/video-maker-lab-calixto#readme"
+  "homepage": "https://github.com/vladimirpezzole/video-maker-lab-calixto#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
 }
