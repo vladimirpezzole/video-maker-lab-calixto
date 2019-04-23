@@ -1,0 +1,22 @@
+{
+  "name": "video-maker-lab-calixto",
+  "version": "1.0.0",
+  "description": "Projeto de teste baseado no Projeto opensource \"video-maker\" de @filipedeschamps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladimirpezzole/video-maker-lab-calixto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladimirpezzole/video-maker-lab-calixto/issues"
+  },
+  "homepage": "https://github.com/vladimirpezzole/video-maker-lab-calixto#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
+}
