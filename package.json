@@ -17,8 +17,6 @@
   },
   "homepage": "https://github.com/vladimirpezzole/video-maker-lab-calixto#readme",
   "dependencies": {
-    "algorithmia": "^0.3.10",
-    "readline-sync": "^1.4.9",
-    "sbd": "^1.0.15"
+    "readline-sync": "^1.4.9"
   }
 }
