@@ -5,7 +5,7 @@ const sentenceBoundaryDetection = require('sbd')
 const watsonApiKey = require('../credentials/watson-nlu.json').apikey
 
 const NaturalLanguageUnderstandingV1 = require('ibm-watson/natural-language-understanding/v1.js');
-const myWatsonApiKey = 'pySL-FQoMVjDLXSFvO-5iZzP9UMd_5QMuIg8PadsSWnZ'
+//const myWatsonApiKey = watsonApiKey
 const urlApi='https://gateway.watsonplatform.net/natural-language-understanding/api'
  
 const nlu = new NaturalLanguageUnderstandingV1({
