@@ -1,4 +1,4 @@
-const myWatsonApiKey = 'eSjVWYiNv1K_lMtrrUTCKxSFSCOipodnSS7Rg6foIQYp'
+const myWatsonApiKey = ''
 const urlApi='https://gateway.watsonplatform.net/visual-recognition/api'
 
 var VisualRecognitionV3 = require('ibm-watson/visual-recognition/v3');
