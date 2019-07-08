@@ -63,5 +63,5 @@ typings/
 # credentials
 credentials/*.json
 
-#meus diretorios
+# temp
 temp/*.json
