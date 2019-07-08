@@ -64,5 +64,4 @@ typings/
 credentials/*.json
 
 # temp 
-temp/*.json
-temp/
+temp/*.js
