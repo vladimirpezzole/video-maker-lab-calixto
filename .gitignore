@@ -63,5 +63,6 @@ typings/
 # credentials
 credentials/*.json
 
-# temp
+# temp 
 temp/*.json
+temp/
