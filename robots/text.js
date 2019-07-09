@@ -14,19 +14,25 @@ const nlu = new NaturalLanguageUnderstandingV1({
   url: urlApi
 });
 
+/*
 const analyzeParams = {
   'text':'Hi I am Michael Jackson and I like doing the moonwalk dance move.',
   'features': {
     keywords: {}
    }
-};
+}; */
+const state = require('./state.js')
 
-async function robot(content) {
+async function robot() {
+	const content = state.load()
+
 	await fetchContentFromWikipedia(content)
 	sanitizeContent(content)
 	breakContentIntoSentences(content)
 	limitMaximumSentences(content)
 	await fetchKeywordsOfAllSentences(content)
+
+	state.save(content)
 
 	async function fetchContentFromWikipedia(content) {
 		const algorithmiaAuthenticated = algorithmia(algorithmiaApiKey)
