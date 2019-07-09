@@ -63,5 +63,7 @@ typings/
 # credentials
 credentials/*.json
 
+content.json
+
 # temp 
 temp/*.js

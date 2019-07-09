@@ -26,3 +26,9 @@ nlu.analyze(analyzeParams)
     console.log('error:', err)
     process.exit(0);
   });
+
+  ------------------------- 
+  //node le mas fica gravado no cache pra sempre
+  function load2() {
+	return require('.content.json')
+}
