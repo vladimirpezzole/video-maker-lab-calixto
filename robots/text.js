@@ -14,13 +14,6 @@ const nlu = new NaturalLanguageUnderstandingV1({
   url: urlApi
 });
 
-/*
-const analyzeParams = {
-  'text':'Hi I am Michael Jackson and I like doing the moonwalk dance move.',
-  'features': {
-    keywords: {}
-   }
-}; */
 const state = require('./state.js')
 
 async function robot() {
