@@ -65,6 +65,8 @@ credentials/*.json
 
 content.json
 
+content/*.png
+
 # temp 
 temp/*
 temp/*.js
