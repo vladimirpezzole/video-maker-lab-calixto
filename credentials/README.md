@@ -19,3 +19,13 @@ File: `watson-nlu.json`
   ""
 }
 ```
+
+## Google Search
+
+File: `google-search.json`
+
+```
+{
+  ""
+}
+```

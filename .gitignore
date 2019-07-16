@@ -70,5 +70,3 @@ content/*.jpg
 
 # temp 
 temp/
-temp/*.*
-temp/*.js
