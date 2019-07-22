@@ -27,6 +27,7 @@
     "googleapis": "^40.0.1",
     "ibm-watson": "^4.2.0",
     "image-downloader": "^3.4.2",
+    "lodash.merge": "^4.6.2",
     "lodash.mergewith": "^4.6.2",
     "readline-sync": "^1.4.9",
     "sbd": "^1.0.15",
