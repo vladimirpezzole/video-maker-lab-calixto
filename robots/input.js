@@ -11,7 +11,7 @@ function robot(){
 	state.save(content)
 
 	function askAndReturnSearchTerm() {
-		return readline.question('Escreva o termo wikipedia a ser procurado: ')
+		return readline.question('Digite um termo de pesquisa da Wikipédia: ')
 	}
 
 	function askAndReturnPrefix(){

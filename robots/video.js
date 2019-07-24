@@ -13,15 +13,16 @@ ffmpeg.setFfmpegPath(ffmpegPath);
 ffmpeg.setFfprobePath(ffprobePath);
 
 async function robot(){
+	console.log('> [video-robot] Inicializando...')
 	const content = state.load()
 
-	// await convertAllImages(content)
-	// await createAllSentenceImages(content)
-	// await createYouTubeThumbnail()
-  await createAfterEffectsScript(content)
+	await convertAllImages(content)
+	await createAllSentenceImages(content)
+	await createYouTubeThumbnail()
+  	await createAfterEffectsScript(content)
 	await renderVideo("node", content);
 
-  // state.save(content)
+  state.save(content)
 
 	async function convertAllImages(content) {
 		for (let sentenceIndex = 0; sentenceIndex < content.sentences.length; sentenceIndex++) {
@@ -61,7 +62,7 @@ async function robot(){
 	            return reject(error)
 	          }
 
-	          console.log(`> Image converted: ${inputFile}`)
+	          console.log(`> [video-robot] Image convertida: ${outputFile}`)
 	          resolve()
 	        })
 
@@ -122,7 +123,7 @@ async function robot(){
 	            return reject(error)
 	          }
 
-	          console.log(`> Sentence created: ${outputFile}`)
+	          console.log(`> [video-robot] Sentença criada: ${outputFile}`)
 	          resolve()
 		        })
 		    })
@@ -137,7 +138,7 @@ async function robot(){
 		            return reject(error)
 		          }
 
-		          console.log('> Creating YouTube thumbnail')
+		          console.log('> [video-robot] YouTube thumbnail criado')
 		          resolve()
 		        })
 		})
@@ -154,7 +155,7 @@ async function robot(){
       const templateFilePath = `${rootPath}/templates/1/template.aep`
       const destinationFilePath = `${rootPath}/content/output.mov`
 
-      console.log('> Starting After Effects')
+      console.log('> [video-robot] Inicializando After Effects')
 
       const aerender = spawn(aerenderFilePath, [
         '-comp', 'main',
@@ -167,12 +168,13 @@ async function robot(){
       })
 
       aerender.on('close', () => {
-        console.log('> After Effects closed')
+        console.log('> [video-robot] After Effects closed')
         resolve()
       })
     })
   }
 
+//***Função pra rederizar via Noode****
   async function renderVideoWithNode(content) {
     return new Promise((resolve, reject) => {
       console.log("> Renderizando vídeo com node.");
