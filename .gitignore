@@ -75,5 +75,7 @@ Adobe After Effects Auto-Save
 template.aep Logs
 
 
-# temp 
+# Diretórios 
 temp/
+BKP/
+.GitgnoreFiles
