@@ -194,7 +194,7 @@ async function robot(){
 
       const videoOptions = {
         fps: 25,
-        loop: 5, // seconds
+        loop: 15, // seconds
         transition: true,
         transitionDuration: 1, // seconds
         videoBitrate: 1024,
@@ -207,7 +207,7 @@ async function robot(){
         useSubRipSubtitles: false, // Use ASS/SSA subtitles instead
         subtitleStyle: {
           Fontname: "Verdana",
-          Fontsize: "26",
+          Fontsize: "32",
           PrimaryColour: "11861244",
           SecondaryColour: "11861244",
           TertiaryColour: "11861244",
