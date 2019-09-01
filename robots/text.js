@@ -1,5 +1,7 @@
 const algorithmia = require('algorithmia')
 const algorithmiaApiKey = require('../credentials/algorithmia.json').apiKey
+//lang do Algorithmia
+const algorithmiaLang = require('../credentials/algorithmia.json').lang
 const sentenceBoundaryDetection = require('sbd')
 
 const watsonApiKey = require('../credentials/watson-nlu.json').apikey
@@ -32,7 +34,12 @@ async function robot() {
 		console.log('> [text-robot] Buscando conteúdo da Wikipedia')
 		const algorithmiaAuthenticated = algorithmia(algorithmiaApiKey)
 		const wikipediaAlgorithm = algorithmiaAuthenticated.algo('web/WikipediaParser/0.1.2')
-		const wikipediaResponse = await wikipediaAlgorithm.pipe(content.searchTerm)
+		const term = {
+		    "articleName": content.searchTerm,
+		    "lang": algorithmiaLang
+	    }
+	    const wikipediaResponse = await wikipediaAlgorithm.pipe(term)
+		// const wikipediaResponse = await wikipediaAlgorithm.pipe(content.searchTerm) //versão anterior
 		const wikipediaContent = wikipediaResponse.get()
 		
 		content.sourceContentOriginal  = wikipediaContent.content
