@@ -1,5 +1,16 @@
-## video-maker-lab-calixto
-> **Projeto de teste baseado no Projeto opensource "video-maker" de @filipedeschamps**
+## Video-Maker-Lab-Calixto
+
+> **Projeto de teste Fork do Projeto opensource ["video-maker"](https://github.com/filipedeschamps/video-maker) de [@filipedeschamps](https://github.com/filipedeschamps)**
+
+<h5><u>Modificações</u></h5>
+
+- [x] Alteração para <b>português</b> da busca do Wikipedia e textos do Script
+- [ ] Incluir opção de escolha na Busca do Wikipedia quando houver mais de uma opção para o termo buscado ou não encontrado
+- [x] Adicionar <b>edição e renderização de vídeo</b> em <b>NodeJS</b> para ser utilizado em Linux mantendo como segunda opção o <b>AfterEfects</b>
+- [ ] Adionar opção de <b>edição e renderização de vídeo</b> utilizando script de template do <b>[Kdenlive](https://kdenlive.org)</b>
+- [ ] Adicionar barras de progresso
+- [ ] Atualizar o README
+- [ ] Remontar o Projeto em <b>PHP</b> com interface visual via browser e opção de confirmação de sequencia.
 
 
 * * *
